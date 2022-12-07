@@ -42,6 +42,7 @@ const MirrorTable = (props: Props) => {
             {column.map((item) => {
               return (
                 <Th
+                  key={item.title}
                   color="rgba(255, 255, 255, 0.48) !important"
                   fontSize={"12px !important"}
                   background="transparent !important"
@@ -57,13 +58,17 @@ const MirrorTable = (props: Props) => {
         <Tbody>
           {data.map((item, index) => {
             return (
-              <Tr>
+              <Tr key={index}>
                 {column.map((childitem, childIndex) => {
                   return (
                     <Td
+                      key={childIndex}
                       bg={
                         index % 2 === 0 &&
+                        tableProps &&
+                        // @ts-ignore
                         tableProps?.variant &&
+                        // @ts-ignore
                         tableProps?.variant === "striped"
                           ? "rgba(255, 255, 255, 0.04) !important"
                           : ""

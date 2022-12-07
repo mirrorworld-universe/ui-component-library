@@ -137,6 +137,7 @@ export default function Home() {
   const cancelRef = React.useRef();
   const isMobile = useBreakpointValue({ base: true, md: false });
   const [value, setValue] = React.useState("1");
+  // @ts-ignore
   const { isOpen2, onOpen2, onClose2 } = useDisclosure();
 
   const initialRef = React.useRef(null);
@@ -233,6 +234,7 @@ export default function Home() {
                 onClick={() =>
                   toast({
                     title: `${status} toast`,
+                    // @ts-ignore
                     status: status,
                     isClosable: false,
                     duration: 90000,
@@ -272,6 +274,7 @@ export default function Home() {
                   toast({
                     title: `${status} toast`,
                     description: "We've created your account for you.",
+                    // @ts-ignore
                     status: status,
                     isClosable: true,
                     duration: 90000,
@@ -292,6 +295,7 @@ export default function Home() {
                   toast({
                     title: `${status} toast`,
                     description: "We've created your account for you.",
+                    // @ts-ignore
                     status: status,
                     position: "bottom-left",
                     isClosable: true,
@@ -312,6 +316,7 @@ export default function Home() {
                   toast({
                     title: `${status} toast`,
                     description: "We've created your account for you.",
+                    // @ts-ignore
                     status: status,
                     position: "bottom-right",
                     isClosable: true,
@@ -332,6 +337,7 @@ export default function Home() {
                   toast({
                     title: `${status} toast`,
                     description: "We've created your account for you.",
+                    // @ts-ignore
                     status: status,
                     position: "top",
                     isClosable: true,
@@ -584,6 +590,7 @@ export default function Home() {
         </Button>
         <AlertDialog
           isOpen={isOpen}
+          // @ts-ignore
           leastDestructiveRef={cancelRef}
           onClose={onClose}
         >
@@ -594,7 +601,7 @@ export default function Home() {
               </AlertDialogHeader>
               <AlertDialogCloseButton bg="transparent !important" />
               <AlertDialogBody>
-                Are you sure? You can't undo this action afterwards.
+                {"Are you sure? You can't undo this action afterwards."}
               </AlertDialogBody>
 
               <AlertDialogFooter>
