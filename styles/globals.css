@@ -14,13 +14,59 @@ a {
 * {
   box-sizing: border-box;
 }
+.chakra-alert__title {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+.css-c4p8sy,
+.css-x0mvlu,
+.css-jvo1gb,
+.css-nscatm {
+  border-radius: 0px !important;
+}
+textarea {
+  background: #000000 !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+textarea:hover {
+  /* whiteAlpha/500 */
+  border: 1px solid rgba(255, 255, 255, 0.36) !important;
+  color: rgba(255, 255, 255, 0.36) !important;
+  box-shadow: none !important;
+}
+textarea:focus {
+  border: 1px solid #dcff1c !important;
+  color: rgba(255, 255, 255, 0.36) !important;
+  box-shadow: none !important;
+}
+textarea:disabled {
+  opacity: 0.5 !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  color: rgba(255, 255, 255, 0.36) !important;
+  box-shadow: none !important;
+}
+.css-1a5z1v0 {
+  border: 1px solid #ff4747 !important;
+  box-shadow: none !important;
+}
+option {
+  background: red !important;
+  color: red !important;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
 }
