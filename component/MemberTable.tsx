@@ -19,7 +19,7 @@ import * as React from "react";
 import { FiEdit2, FiTrash2 } from "react-icons/fi";
 import { IoArrowDown } from "react-icons/io5";
 import { Rating } from "./Rating";
-import { members } from "../data/tableData";
+import { members } from "./data/tableData";
 
 // 123456
 
