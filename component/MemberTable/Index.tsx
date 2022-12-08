@@ -19,9 +19,9 @@ import * as React from "react";
 import { FiEdit2, FiTrash2 } from "react-icons/fi";
 import { IoArrowDown } from "react-icons/io5";
 import { Rating } from "./Rating";
-import { members } from "../../data/tableData";
+import { members } from "../data/tableData";
 
-export const MemberTable = (props: TableProps) => (
+const Membertable = (props: TableProps) => (
   <Table {...props}>
     <Thead>
       <Tr>
@@ -127,3 +127,4 @@ export const MemberTable = (props: TableProps) => (
     </Tbody>
   </Table>
 );
+export default Membertable;

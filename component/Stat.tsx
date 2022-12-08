@@ -8,7 +8,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import * as React from "react";
-import theme from "../../theme";
+import theme from "../theme";
 import { TriangleDownIcon, TriangleUpIcon } from "@chakra-ui/icons";
 
 interface Props {
