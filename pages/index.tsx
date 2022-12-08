@@ -47,7 +47,7 @@ import { useToast, FormLabel } from "@chakra-ui/react";
 
 import React from "react";
 
-import { Stat, Table, MemberTable } from "../component/MemberTable";
+import { Stat, Table, MemberTable } from "../component";
 // import { FiSearch } from "react-icons/fi";
 import {
   AlertDialog,
