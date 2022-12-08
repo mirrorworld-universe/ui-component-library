@@ -25,6 +25,14 @@ import {
   NumberIncrementStepper,
   NumberDecrementStepper,
   Select,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
 } from "@chakra-ui/react";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 import {
@@ -39,7 +47,12 @@ import {
 import { Radio, RadioGroup } from "@chakra-ui/react";
 import { Textarea } from "@chakra-ui/react";
 import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
-import { PhoneIcon, AddIcon, WarningIcon } from "@chakra-ui/icons";
+import {
+  PhoneIcon,
+  AddIcon,
+  WarningIcon,
+  ChevronDownIcon,
+} from "@chakra-ui/icons";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { Tooltip, VStack } from "@chakra-ui/react";
 
@@ -846,6 +859,30 @@ export default function Home() {
             <option value="option3">Option 3</option>
           </Select>
         </Stack>
+        <Menu>
+          <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+            Actions
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
+        <Menu>
+          <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+            Actions
+          </MenuButton>
+          <MenuList>
+            <MenuItem margin="10px 0px">Download</MenuItem>
+            <MenuItem margin="10px 0px">Create a Copy</MenuItem>
+            <MenuItem margin="10px 0px">Mark as Draft</MenuItem>
+            <MenuItem margin="10px 0px">Delete</MenuItem>
+            <MenuItem margin="10px 0px">Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
       </main>
     </div>
   );

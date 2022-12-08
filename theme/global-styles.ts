@@ -141,7 +141,8 @@ export const globalStyles: SystemStyleObject = {
    },
   "button": {
     background: '#DCFF1C !important',
-    fontWeight: '600 !important'
+    fontWeight: '600 !important',
+    color: "#000 !important"
   },
   "button:active": {
     background: '#DCFF1C !important',
@@ -328,4 +329,23 @@ export const globalStyles: SystemStyleObject = {
   ':focus-visible': {
     outline:'none !important'
   },
+  ".chakra-menu__menu-list": {
+    background: '#151515 !important',
+    // backdropFilter: 'blur(20px) !important',
+    border: "none !important",
+    borderRadius: '6px !important',
+    button: {
+      height: '40px !important',
+      fontWeight: '400 !important',
+      fontSize: '16px !important',
+      lineHeight: '24px !important',
+      background: 'transparent !important',
+      color: "#fff !important",
+      padding: '8px 16px !important',
+    },
+    'button:hover': {
+      background: '#DCFF1C !important',
+      color: '#000 !important'
+    }
+  }
 }
