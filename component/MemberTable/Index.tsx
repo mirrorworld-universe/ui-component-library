@@ -21,7 +21,7 @@ import { IoArrowDown } from "react-icons/io5";
 import { Rating } from "./Rating";
 import { members } from "../data/tableData";
 
-const MembeTable = (props: TableProps) => (
+const MemberTable = (props: TableProps) => (
   <Table {...props}>
     <Thead>
       <Tr>
@@ -127,4 +127,4 @@ const MembeTable = (props: TableProps) => (
     </Tbody>
   </Table>
 );
-export default MembeTable;
+export default MemberTable;
